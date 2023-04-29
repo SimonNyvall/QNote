@@ -2,7 +2,7 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -30,6 +30,8 @@ app.whenReady().then(() => {
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
+
+  
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
